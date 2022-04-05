@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth_google/pages/home/home.dart';
 import 'package:flutter_auth_google/pages/login/login_service.dart';
 import 'package:flutter_auth_google/pages/sign_up/sign_up_page.dart';
 import 'package:flutter_auth_google/shared/constants/custom_colors.dart';
@@ -220,6 +221,11 @@ class _LoginPageState extends State<LoginPage> {
     if (_formKey.currentState.validate()) {
       LoginService()
         .login(_mailInputController.text, _passwordInputController.text);
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const HomePage()),
+      );
     } else {
       print("invalido");
     }
