@@ -15,11 +15,11 @@ dependencies:
   firebase_auth: ^3.3.12
   firebase_core: ^1.14.0
   google_sign_in: ^5.2.4
-  
+
   cupertino_icons: ^1.0.2
-  shared_preferences: ^2.0.6  
-  http: ^0.12.2
-  modal_bottom_sheet: ^2.0.0  
+  shared_preferences: ^2.0.6
+  http: ^0.13.4
+  modal_bottom_sheet: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -34,4 +34,3 @@ flutter:
 
   assets:
     - assets/
-    - assets/icons/
